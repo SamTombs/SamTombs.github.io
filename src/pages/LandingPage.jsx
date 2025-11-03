@@ -1,35 +1,26 @@
 import Herobanner from "../assets/Herobanner.jpg";
 import TechStack from "../components/TechStack";
-import ProjectCard from "../components/ProjectCard";
+import { ProjectCard1, ProjectCard2, ProjectCard3, ProjectCard4 } from "../components/ProjectCard";
 
 const LandingPage = () => {
   return (
     <>
-      <section className=" flex flex-col ">
+      <section className="flex flex-col">
         <div>
           <div>
             <img src={Herobanner} alt="Hero" />
           </div>
         </div>
-        <div className="pt-10 h-auto justify-items-center">
+        <div className="w-full px-8 md:px-16 lg:px-24">
           <TechStack />
         </div>
       </section>
-      <section className=" flex flex-row h-1/2 w-screen">
-        <div>
-          <div>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-          </div>
-        </div>
-      </section>
-      <section className=" flex flex-row h-1/2 w-screen">
-        <div>
-          <div>
-            <h1>About ME </h1>
-          </div>
+      <section className="flex flex-col py-12 px-8 md:px-16 lg:px-24 space-y-16 md:space-y-24">
+        <div className="space-y-16 md:space-y-24">
+          <ProjectCard1 />
+          <ProjectCard2 />
+          <ProjectCard3 />
+          <ProjectCard4 />
         </div>
       </section>
     </>
