@@ -122,3 +122,6 @@ function ProjectCard4() {
 }
 
 export { ProjectCard1, ProjectCard2, ProjectCard3, ProjectCard4 };
+
+
+// className="w-full md:w-1/2 bg-white p-8 md:p-12 flex flex-col h-full"

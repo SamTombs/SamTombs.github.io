@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png"; 
 
-const IconLink = () => {
+export default function IconLink() {
   return (
   <img src={logo}
   alt="logo"
@@ -9,4 +9,5 @@ const IconLink = () => {
   )
 };
 
-export default IconLink;
+
+

@@ -1,9 +1,12 @@
-const Footer = () => {
+export default function Footer() {
   return (
     <>
-        <h1 className="flex justify-between items-center px-4" style={{ height: "60px" }}>This is the footer</h1>
+      <div
+        className="flex flex-col justify-center items-center px-4"
+        style={{ height: "60px" }}
+      >
+        <p className="text-sm italic">Built in React with Tailwind CSS</p>
+      </div>
     </>
   );
 };
-
-export default Footer;

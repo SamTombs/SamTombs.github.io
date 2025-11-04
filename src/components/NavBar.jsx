@@ -1,25 +1,61 @@
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import IconLink from "./IconLink";
 
-const NavBar = () => {
-  const handleNavClick = (event, targetId) => {
+export default function NavBar() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleHomeClick = (event) => {
     event.preventDefault();
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      const navbarHeight = document.getElementById("navbar").offsetHeight;
-      window.scrollBy({ top: navbarHeight, behavior: "smooth" });
-      targetElement.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
     }
   };
+
+  const handleProjectClick = (event) => {
+    event.preventDefault();
+    if (location.pathname === "/") {
+      const projectsElement = document.getElementById("projects");
+      if (projectsElement) {
+        const navbarHeight = document.getElementById("navbar")?.offsetHeight || 0;
+        const elementPosition = projectsElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        const projectsElement = document.getElementById("projects");
+        if (projectsElement) {
+          const navbarHeight = document.getElementById("navbar")?.offsetHeight || 0;
+          const elementPosition = projectsElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      }, 300);
+    }
+  };
+
   return (
     <nav id="navbar" className="sticky top-0 z-50 bg-white flex rounded-lg justify-between h-17 shadow-xl items-center px-4">
-      <Link onClick={(event) => handleNavClick(event, "home")} className="h-full">
+      <Link onClick={handleHomeClick} className="h-full">
         <IconLink />
       </Link>
       <ul className="flex flex-row gap-6">
         <li>
           <Link 
-            onClick={(event) => handleNavClick(event, "projects")}
+            onClick={handleProjectClick}
             className="bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-800 transition-colors"
           >
             Projects
@@ -28,7 +64,6 @@ const NavBar = () => {
         <li>
           <Link 
             to="/about" 
-            onClick={(event) => handleNavClick(event, "about")}
             className="bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-800 transition-colors"
           >
             About
@@ -37,7 +72,6 @@ const NavBar = () => {
         <li>
           <Link 
             to="/contact" 
-            onClick={(event) => handleNavClick(event, "contact")}
             className="bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-800 transition-colors"
           >
             Contact
@@ -47,5 +81,3 @@ const NavBar = () => {
     </nav>
   );
 };
-
-export default NavBar;

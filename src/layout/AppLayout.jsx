@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 
-const AppLayout = () => {
+export default function AppLayout() {
   return (
     <div className="app">
       <NavBar />
@@ -15,4 +15,3 @@ const AppLayout = () => {
   );
 }
 
-export default AppLayout

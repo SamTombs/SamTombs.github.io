@@ -7,7 +7,7 @@ import ContactPage from "./pages/Contact";
 import "./App.css";
 import { Route, Routes } from "react-router";
 
-const App = () => {
+export default function App() {
   return (
     <>
       <Routes>
@@ -21,4 +21,3 @@ const App = () => {
   );
 };
 
-export default App;
