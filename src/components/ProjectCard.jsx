@@ -5,19 +5,19 @@ import TravelMate from "../assets/TravelMate.png";
 
 function ProjectCard1() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center min-h-[400px] rounded-xl overflow-hidden shadow-xl/20">
-      <div className="relative w-full md:w-1/2 h-[300px] md:h-[400px]">
+    <section className="relative flex flex-col md:flex-row items-center min-h-[300px] md:min-h-[400px] lg:min-h-[450px] rounded-xl overflow-hidden shadow-xl/20">
+      <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] max-h-[450px] flex-shrink-0 overflow-hidden">
         <img
           src={KnightsQuest}
           alt="Knights Quest"
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover lg:object-contain rounded-xl"
         />
       </div>
-      <div className="w-full md:w-1/2 h-full bg-white md:p-12 flex flex-col">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+      <div className="w-full md:w-1/2 h-full bg-white p-6 sm:p-8 md:p-12 flex flex-col">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-800">
           Knights Quest
         </h1>
-        <div className="text-gray-600 leading-relaxed flex-1 flex flex-col">
+        <div className="text-sm sm:text-base text-gray-600 leading-relaxed flex-1 flex flex-col">
           <p className="flex-1">
             Knights Quest is a pixel-art, choose-your-own-adventure web game
             where you play as a knight on a quest to rescue a kidnapped magical
@@ -35,12 +35,12 @@ function ProjectCard1() {
 
 function ProjectCard2() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center min-h-[400px] rounded-lg overflow-hidden shadow-xl/20">
-      <div className="w-full md:w-1/2 bg-white p-8 md:p-12 flex flex-col h-full">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+    <section className="relative flex flex-col md:flex-row-reverse items-center min-h-[300px] md:min-h-[400px] lg:min-h-[450px] rounded-lg overflow-hidden shadow-xl/20">
+      <div className="w-full md:w-1/2 bg-white p-6 sm:p-8 md:p-12 flex flex-col h-full">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-800">
           Travel Mate
         </h1>
-        <div className="text-gray-600 leading-relaxed flex-1 flex flex-col">
+        <div className="text-sm sm:text-base text-gray-600 leading-relaxed flex-1 flex flex-col">
           <p className="flex-1">
             This CRUD application is a simple yet powerful tool for organizing
             your life. Whether you're planning a trip, managing a to-do list, or
@@ -52,11 +52,11 @@ function ProjectCard2() {
           </p>
         </div>
       </div>
-      <div className="relative w-full md:w-1/2">
+      <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] max-h-[450px] flex-shrink-0 overflow-hidden">
         <img
           src={TravelMate}
           alt="Travel Mate"
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover lg:object-contain rounded-xl"
         />
       </div>
     </section>
@@ -65,19 +65,19 @@ function ProjectCard2() {
 
 function ProjectCard3() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center min-h-[400px] rounded-lg overflow-hidden shadow-xl/20">
-      <div className="relative w-full md:w-1/2 h-[300px] md:h-[400px]">
+    <section className="relative flex flex-col md:flex-row items-center min-h-[300px] md:min-h-[400px] lg:min-h-[450px] rounded-lg overflow-hidden shadow-xl/20">
+      <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] max-h-[450px] flex-shrink-0 overflow-hidden">
         <img
           src={ProteinPal}
           alt="Protein Pal"
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover lg:object-contain rounded-xl"
         />
       </div>
-      <div className="w-full md:w-1/2 bg-white p-8 md:p-12 flex flex-col h-full">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+      <div className="w-full md:w-1/2 bg-white p-6 sm:p-8 md:p-12 flex flex-col h-full">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-800">
           Protein Pal
         </h1>
-        <div className="text-gray-600 leading-relaxed flex-1 flex flex-col">
+        <div className="text-sm sm:text-base text-gray-600 leading-relaxed flex-1 flex flex-col">
           <p className="flex-1">
             I created a React app designed to inspire users to shop for protein
             products. Aesthetically I wanted to aim for the modern Millenial;
@@ -93,12 +93,12 @@ function ProjectCard3() {
 
 function ProjectCard4() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center min-h-[400px] rounded-lg overflow-hidden shadow-xl/20">
-      <div className="w-full md:w-1/2 bg-white p-8 md:p-12 flex flex-col h-full">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+    <section className="relative flex flex-col md:flex-row-reverse items-center min-h-[300px] md:min-h-[400px] lg:min-h-[450px] rounded-lg overflow-hidden shadow-xl/20">
+      <div className="w-full md:w-1/2 bg-white p-6 sm:p-8 md:p-12 flex flex-col h-full">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-800">
           Élan
         </h1>
-        <div className="text-gray-600 leading-relaxed flex-1 flex flex-col">
+        <div className="text-sm sm:text-base text-gray-600 leading-relaxed flex-1 flex flex-col">
           <p className="flex-1">
             I created a slightly tongue in cheek React Shopping app designed to
             sell a unique and time limited luxury leisurewear. Aesthetically I
@@ -110,11 +110,11 @@ function ProjectCard4() {
           </p>
         </div>
       </div>
-      <div className="relative w-full md:w-1/2 h-[300px] md:h-[400px]">
+      <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] max-h-[450px] flex-shrink-0 overflow-hidden">
         <img
           src={Élan}
           alt="Élan"
-          className="w-full h-full object-cover rounded-xl"
+          className="w-full h-full object-cover lg:object-contain rounded-xl"
         />
       </div>
     </section>

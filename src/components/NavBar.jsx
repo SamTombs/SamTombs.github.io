@@ -48,15 +48,15 @@ export default function NavBar() {
   };
 
   return (
-    <nav id="navbar" className="sticky top-0 z-50 bg-white flex rounded-lg justify-between h-17 shadow-xl items-center px-4">
+    <nav id="navbar" className="sticky top-0 z-50 bg-white flex rounded-lg justify-between h-17 shadow-xl items-center px-2 sm:px-4">
       <Link onClick={handleHomeClick} className="h-full">
         <IconLink />
       </Link>
-      <ul className="flex flex-row gap-6">
+      <ul className="flex flex-row gap-2 sm:gap-4 md:gap-6">
         <li>
           <Link 
             onClick={handleProjectClick}
-            className="bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-800 transition-colors"
+            className="bg-black text-white rounded-lg px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-sm sm:text-base hover:bg-gray-800 transition-colors"
           >
             Projects
           </Link>
@@ -64,7 +64,7 @@ export default function NavBar() {
         <li>
           <Link 
             to="/about" 
-            className="bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-800 transition-colors"
+            className="bg-black text-white rounded-lg px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-sm sm:text-base hover:bg-gray-800 transition-colors"
           >
             About
           </Link>
@@ -72,7 +72,7 @@ export default function NavBar() {
         <li>
           <Link 
             to="/contact" 
-            className="bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-800 transition-colors"
+            className="bg-black text-white rounded-lg px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-sm sm:text-base hover:bg-gray-800 transition-colors"
           >
             Contact
           </Link>
