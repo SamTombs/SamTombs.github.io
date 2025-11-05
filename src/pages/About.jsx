@@ -20,7 +20,7 @@ export default function AboutPage() {
             keep learning!
           </p>
         </section>
-        <section className="flex flex-row py-10">
+        <section className="flex flex-row py-10 gap-4">
           <div>
             <ExperiencesCarousel />
           </div>

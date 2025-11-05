@@ -40,14 +40,12 @@ export default function ImageCarousel() {
   };
 
   return (
-    <section className="relative flex flex-col md:flex-row items-center min-h-[300px] md:min-h-[400px] lg:min-h-[450px] rounded-xl overflow-hidden shadow-xl/20">
-      <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] max-h-[450px] flex-shrink-0 overflow-hidden bg-white">
+    <section className="relative justify-center flex flex-col md:flex-row items-center min-h-[250px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[450px] rounded-xl overflow-hidden shadow-xl/20">
+      <div className="relative w-full sm:w-[400px] md:w-[450px] lg:w-[500px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[450px] flex-shrink-0 overflow-hidden bg-white">
         <img
           src={images[currentImage].src}
           alt={images[currentImage].alt}
-          className={`w-full h-full object-contain rounded-xl ${
-            images[currentImage].alt === "Experiences" ? "w-auto max-w-[40%] mx-auto py-4" : "w-full"
-          }`}
+          className="w-full h-full object-contain rounded-xl"
         />
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-row gap-4">
           <button 
