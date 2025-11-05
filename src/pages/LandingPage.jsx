@@ -12,7 +12,7 @@ export default function LandingPage() {
     <>
       <div className="bg-white">
         <section id="home" className="flex flex-col">
-          <div className="w-full">
+          <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
             <Title />
           </div>
           <div id="projects" className="w-full pt-8 md:pt-12 px-4 sm:px-8 md:px-16 lg:px-24">
