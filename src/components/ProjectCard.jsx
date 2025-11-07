@@ -2,6 +2,7 @@ import KnightsQuest from "../assets/KnightsQuest.png";
 import Élan from "../assets/Élan.png";
 import ProteinPal from "../assets/ProteinPal.png";
 import TravelMate from "../assets/TravelMate.png";
+import github from "../assets/TechIcons/github.png";
 
 function ProjectCard1() {
   return (
@@ -28,6 +29,15 @@ function ProjectCard1() {
             replicating/altering code over multiple HTML pages.
           </p>
         </div>
+        <a
+          href="https://github.com/SamTombs/knights-quest"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 self-start rounded-full border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+        >
+          <img src={github} alt="GitHub" className="h-5 w-5" />
+          <span>View on GitHub</span>
+        </a>
       </div>
     </section>
   );
@@ -51,6 +61,15 @@ function ProjectCard2() {
             place.
           </p>
         </div>
+        <a
+          href="https://github.com/SamTombs/travel-planner"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 self-start rounded-full border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+        >
+          <img src={github} alt="GitHub" className="h-5 w-5" />
+          <span>View on GitHub</span>
+        </a>
       </div>
       <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] max-h-[450px] flex-shrink-0 overflow-hidden">
         <img
@@ -86,6 +105,15 @@ function ProjectCard3() {
             discovering motivation to stay consistent with their health goals.
           </p>
         </div>
+        <a
+          href="https://github.com/SamTombs/protein-pal-front-end"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 self-start rounded-full border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+        >
+          <img src={github} alt="GitHub" className="h-5 w-5" />
+          <span>View on GitHub</span>
+        </a>
       </div>
     </section>
   );
@@ -109,6 +137,15 @@ function ProjectCard4() {
             Django Back End with the Basket linked to the user.
           </p>
         </div>
+        <a
+          href="https://github.com/SamTombs/elan-front-end"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-2 self-start rounded-full border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 hover:text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+        >
+          <img src={github} alt="GitHub" className="h-5 w-5" />
+          <span>View on GitHub</span>
+        </a>
       </div>
       <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] max-h-[450px] flex-shrink-0 overflow-hidden">
         <img
