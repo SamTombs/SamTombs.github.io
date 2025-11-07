@@ -20,12 +20,12 @@ export default function AboutPage() {
             keep learning!
           </p>
         </section>
-        <section className="flex flex-row py-10 gap-4">
-          <div>
+        <section className="flex flex-col md:flex-row py-10 gap-8 w-full px-4 sm:px-8 md:px-16 lg:px-24">
+          <div className="flex-1">
             <ExperiencesCarousel />
           </div>
-          <div>
-          <InterestsCarousel />
+          <div className="flex-1">
+            <InterestsCarousel />
           </div>
         </section>
       </div>
